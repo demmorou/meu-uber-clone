@@ -7,9 +7,11 @@ import {
 
 import MapView, { Marker } from 'react-native-maps';
 
+import { APY_KEY } from 'react-native-dotenv';
+
 import Geocoder from 'react-native-geocoding';
 
-Geocoder.init('AIzaSyACQ0EcknhqeFkOabwvMrOQs_ZVQVxg2fE');
+Geocoder.init(APY_KEY);
 
 import Search from '../Search';
 import Directions from '../Directions';
